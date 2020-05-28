@@ -1,0 +1,17 @@
+<html>
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<body>
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+<h1>FILL UP THE TIME</h1>
+<form action="add">
+{% for i in times %}
+<br>
+<input type='text' name={{i}}>
+{% endfor %}
+<button type="submit">submit</button>
+</form>
+</body>
+{% endblock %}
+</html>

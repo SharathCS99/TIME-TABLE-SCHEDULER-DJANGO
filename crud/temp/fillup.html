@@ -1,0 +1,22 @@
+<html>
+<body>
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<h1>THE SLOTS ARE TO BE FILLED</h1>
+<form action="done">
+{% for i in dic2 %}
+<br>
+{{i}}
+<br>
+{% for j in dic1 %}
+<br>
+<input type='text' name={{i}}+{{j}}>
+{% endfor %}
+<br>
+{% endfor %}
+<button type="submit">submit</button>
+</form>
+</body>
+{% endblock %}
+</html>

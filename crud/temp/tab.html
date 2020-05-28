@@ -1,0 +1,73 @@
+<html>
+{% extends 'base.html' %}
+{% block content %}
+<center>
+<h1>THE TIME TABLE</h1></center>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<table border="2">
+<tr>
+	<th>DAY/TIME</th>
+{% for i in tem %}
+<th>{{i}}</th>
+{% endfor %}
+</tr>
+<tr>
+	<th>MONDAY</th>
+	{% for i in mon %}
+	<th>{{i}}</th>
+	{% endfor %}
+</tr>
+<tr>
+	<th>TUESDAY</th>
+	{% for i in tue %}
+	<th>{{i}}</th>
+	{% endfor %}
+</tr>
+<tr>
+	<th>WEDNESDAY</th>
+	{% for i in wed %}
+	<th>{{i}}</th>
+	{% endfor %}
+</tr>
+<tr>
+	<th>THURSDAY</th>
+	{% for i in thu %}
+	<th>{{i}}</th>
+	{% endfor %}
+</tr>
+<tr>
+	<th>FRIDAY</th>
+	{% for i in fri %}
+	<th>{{i}}</th>
+	{% endfor %}
+</tr>
+<tr>
+	<th>SATURDAY</th>
+	{% for i in sat %}
+	<th>{{i}}</th>
+	{% endfor %}
+</tr>
+<tr>
+	<th>SUNDAY</th>
+	{% for i in sun %}
+	<th>{{i}}</th>
+	{% endfor %}
+</tr>
+</table>
+</center>
+</body>
+{% endblock %}
+</html>
