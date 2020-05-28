@@ -5,7 +5,7 @@ from firebase import firebase
 from .forms import student_form
 from django.contrib import messages
 from .forms import *
-firebase=firebase.FirebaseApplication('https://nodemcu-15321.firebaseio.com/')
+firebase=firebase.FirebaseApplication('fill in the firebase_id')
 a=['id','pass','pass2','slot']
 dictimes=[]
 dictimep=[]
